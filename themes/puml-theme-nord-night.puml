@@ -15,7 +15,6 @@
 '' 
 '' You should have received a copy of the GNU General Public License
 '' along with this program.  If not, see <https://www.gnu.org/licenses/>.
-
 !$NIGHT1 = "#2e3440"
 !$NIGHT2 = "#3b4252"
 !$NIGHT3 = "#434c5e"
@@ -31,7 +30,7 @@
 !$ORANGE = "#d08770"
 !$YELLOW = "#ebcb8b"
 !$GREEN = "#a3be8c"
-!$PURPLE = "#b48ead"
+!$VIOLET = "#b48ead"
 
 <style>
   root {
@@ -44,7 +43,52 @@
     Padding 6
     Shadowing 0.0
   }
-
+  spot {
+    spotAnnotation {
+      FontColor $NIGHT1
+      BackgroundColor $YELLOW
+    }
+    spotAbstractClass {
+      FontColor $NIGHT1
+      BackgroundColor $FROST1
+    }
+    spotClass {
+      FontColor $NIGHT1
+      BackgroundColor $GREEN
+    }
+    spotInterface {
+      FontColor $NIGHT1
+      BackgroundColor $VIOLET
+    }
+    spotEnum {
+      FontColor $NIGHT1
+      BackgroundColor $ORANGE
+    }
+    spotEntity {
+      FontColor $NIGHT1
+      BackgroundColor $GREEN
+    }
+    spotException {
+      FontColor $NIGHT1
+      BackgroundColor $RED
+    }
+    spotMetaclass {
+      FontColor $NIGHT1
+      BackgroundColor $SNOW1
+    }
+    spotProtocol {
+      FontColor $NIGHT1
+      BackgroundColor $SNOW2
+    }
+    spotStereotype {
+      FontColor $NIGHT1
+      BackgroundColor $VIOLET
+    }
+    spotStruct {
+      FontColor $NIGHT1
+      BackgroundColor $SNOW2
+    }
+}
 </style>
 
 skinparam responseMessageBelowArrow true
@@ -70,6 +114,9 @@ skinparam SequenceGroupBorderColor $SNOW1
 skinparam SequenceGroupBorderThickness 1
 skinparam SequenceGroupBackgroundColor $FROST2
 skinparam SequenceGroupBodyBackgroundColor $FROST2
+
+' Reference'
+skinparam ReferenceFontColor $SNOW3
 
 skinparam title {
     FontColor $SNOW3
@@ -108,4 +155,8 @@ skinparam note {
     BackgroundColor $ORANGE
     BorderColor $SNOW1
     FontColor #$SNOW3
+}
+
+skinparam class {
+	StereotypeFontColor $SNOW1
 }
