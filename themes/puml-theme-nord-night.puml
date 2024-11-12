@@ -1,0 +1,112 @@
+''
+'' Nord Night theme for PlantUML
+''
+'' Author: Jason Kuan
+''
+'' This program is free software: you can redistribute it and/or modify
+'' it under the terms of the GNU General Public License as published by
+'' the Free Software Foundation, either version 3 of the License, or
+'' (at your option) any later version.
+'' 
+'' This program is distributed in the hope that it will be useful,
+'' but WITHOUT ANY WARRANTY; without even the implied warranty of
+'' MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+'' GNU General Public License for more details.
+'' 
+'' You should have received a copy of the GNU General Public License
+'' along with this program.  If not, see <https://www.gnu.org/licenses/>.
+
+@startuml
+!$NIGHT1 = "#2e3440"
+!$NIGHT2 = "#3b4252"
+!$NIGHT3 = "#434c5e"
+!$BGCOLOR = "#4c566a"
+!$SNOW1 = "#d8dee9"
+!$SNOW2 = "#e5e9f0"
+!$SNOW3 = "#eceff4"
+!$FROST1 = "#8fbcbb"
+!$FROST2 = "#88c0d0"
+!$FROST3 = "#81a1c1"
+!$FROST4 = "#5e81ac"
+!$RED = "#bf616a"
+!$ORANGE = "#d08770"
+!$YELLOW = "#ebcb8b"
+!$GREEN = "#a3be8c"
+!$PURPLE = "#b48ead"
+
+<style>
+  root {
+    BackgroundColor $BGCOLOR
+    FontColor $SNOW2
+    HyperLinkColor $ORANGE
+    LineColor $SNOW1
+    LineThickness 1
+    Margin 10
+    Padding 6
+    Shadowing 0.0
+  }
+
+</style>
+
+skinparam responseMessageBelowArrow true
+hide footbox
+skinparam ParticipantPadding 20
+skinparam BoxPadding 10
+skinparam shadowing false
+skinparam RoundCorner 8
+
+skinparam BackgroundColor $BGCOLOR
+skinparam ArrowColor #eceff4
+skinparam FontColor #SNOW3
+skinparam SequenceLifeLineBorderColor #eceff4
+
+' Box
+skinparam SequenceBoxFontColor #eceff4
+skinparam SequenceBoxBorderColor #81a1c1
+skinparam SequenceBoxBackgroundColor $FROST3
+
+' Group
+skinparam SequenceGroupFontColor $SNOW3
+skinparam SequenceGroupBorderColor $SNOW1
+skinparam SequenceGroupBorderThickness 1
+skinparam SequenceGroupBackgroundColor $FROST2
+skinparam SequenceGroupBodyBackgroundColor $FROST2
+
+skinparam title {
+    FontColor $SNOW3
+    BorderColor	$FROST1
+    FontSize 20
+    BorderRoundCorner 8
+    BorderThickness 1
+    BackgroundColor $GREEN
+}
+
+skinparam legend {
+    FontColor $SNOW3
+    BorderColor $FROST3
+    BackgroundColor $FROST3
+}
+
+skinparam actor {
+    FontColor $SNOW1
+    BorderColor $FROST2
+    BackgroundColor $FROST2
+}
+
+skinparam participant {
+    FontColor $SNOW3
+    BorderColor $FROST4
+    BackgroundColor $FROST4
+}
+
+skinparam database {
+    FontColor $SNOW3
+    BorderColor $SNOW1
+    BackgroundColor $FROST4
+}
+
+skinparam note {
+    BackgroundColor $ORANGE
+    BorderColor $SNOW1
+    FontColor #$SNOW3
+}
