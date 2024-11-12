@@ -16,7 +16,6 @@
 '' You should have received a copy of the GNU General Public License
 '' along with this program.  If not, see <https://www.gnu.org/licenses/>.
 
-@startuml
 !$NIGHT1 = "#2e3440"
 !$NIGHT2 = "#3b4252"
 !$NIGHT3 = "#434c5e"
