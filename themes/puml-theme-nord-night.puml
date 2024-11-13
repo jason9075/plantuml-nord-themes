@@ -153,6 +153,9 @@ skinparam SequenceGroupBodyBackgroundColor $FROST2
 ' Reference'
 skinparam ReferenceFontColor $SNOW3
 
+'Activity'
+skinparam  ActivityBarColor $GREEN
+
 skinparam title {
     FontColor $SNOW1
     BorderColor	$FROST1
