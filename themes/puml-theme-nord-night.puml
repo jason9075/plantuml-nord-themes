@@ -32,6 +32,20 @@
 !$GREEN = "#a3be8c"
 !$VIOLET = "#b48ead"
 
+'' Lighter colors
+!procedure $obj_scheme()
+  FontColor $SNOW3
+  BorderColor $SNOW1
+  BackgroundColor $FROST3
+!endprocedure
+
+'' Darker colors
+!procedure $blk_scheme()
+  FontColor $SNOW3
+  BorderColor $SNOW1
+  BackgroundColor $FROST4
+!endprocedure
+
 <style>
   root {
     BackgroundColor $BGCOLOR
@@ -39,7 +53,7 @@
     HyperLinkColor $ORANGE
     LineColor $SNOW1
     LineThickness 1
-    Margin 10
+    Margin 4
     Padding 6
     Shadowing 0.0
   }
@@ -88,13 +102,34 @@
       FontColor $NIGHT1
       BackgroundColor $SNOW2
     }
-}
+  }
+  ganttDiagram {
+    task {
+      BackGroundColor $FROST4
+      LineColor $NIGHT2
+      Margin 4
+      Padding 6
+    }
+    separator {
+      $obj_scheme()
+    }
+    milestone {
+  	  FontSize 16
+  	  FontStyle italic
+      FontColor $SNOW3
+  	  BackGroundColor $GREEN
+    }
+    closed {
+      FontColor $VIOLET
+      BackgroundColor $YELLOW
+    }
+  }
 </style>
 
 skinparam responseMessageBelowArrow true
 hide footbox
-skinparam ParticipantPadding 20
-skinparam BoxPadding 10
+skinparam ParticipantPadding 8
+skinparam BoxPadding 8
 skinparam shadowing false
 skinparam RoundCorner 8
 
@@ -119,7 +154,7 @@ skinparam SequenceGroupBodyBackgroundColor $FROST2
 skinparam ReferenceFontColor $SNOW3
 
 skinparam title {
-    FontColor $SNOW3
+    FontColor $SNOW1
     BorderColor	$FROST1
     FontSize 20
     BorderRoundCorner 8
@@ -128,35 +163,150 @@ skinparam title {
 }
 
 skinparam legend {
-    FontColor $SNOW3
-    BorderColor $FROST3
-    BackgroundColor $FROST3
-}
-
-skinparam actor {
-    FontColor $SNOW1
-    BorderColor $FROST2
-    BackgroundColor $FROST2
+    $obj_scheme()
 }
 
 skinparam participant {
-    FontColor $SNOW3
+    FontColor $SNOW1
     BorderColor $FROST4
     BackgroundColor $FROST4
 }
 
-skinparam database {
-    FontColor $SNOW3
-    BorderColor $SNOW1
+skinparam partition {
+    $obj_scheme()
+}
+
+skinparam activity {
+    FontColor $SNOW1
+    BorderColor $SNOW3
     BackgroundColor $FROST4
+    BarColor $SNOW1
+	StartColor $GREEN
+	EndColor $SNOW1
+  	DiamondFontColor $SNOW3
+  	DiamondBorderColor $SNOW1
+    DiamondBackgroundColor none
+}
+
+skinparam actor {
+    $obj_scheme()
+}
+
+skinparam agent {
+    $obj_scheme()
+}
+
+skinparam artifact {
+    $obj_scheme()
+}
+
+skinparam boundary {
+    $obj_scheme()
+    BackgroundColor none
+}
+
+skinparam card {
+    $obj_scheme()
+}
+
+skinparam cloud {
+    $obj_scheme()
+    BackgroundColor none
+}
+
+skinparam collections {
+    $obj_scheme()
+}
+
+skinparam component {
+    $blk_scheme()
+}
+
+skinparam control {
+    $obj_scheme()
+    BackgroundColor none
+}
+
+skinparam database {
+    $obj_scheme()
+}
+
+skinparam entity {
+    $obj_scheme()
+    BackgroundColor none
+}
+
+skinparam file {
+    $obj_scheme()
+}
+
+skinparam folder {
+    $obj_scheme()
+}
+
+skinparam frame {
+    $obj_scheme()
+}
+
+skinparam hexagon {
+    $obj_scheme()
+}
+
+skinparam interface {
+    $obj_scheme()
+    backgroundcolor $ORANGE
+}
+
+skinparam node {
+    $obj_scheme()
+}
+
+skinparam package {
+    $blk_scheme()
+}
+
+skinparam person {
+    $obj_scheme()
+    BackgroundColor none
+}
+
+skinparam queue {
+    $obj_scheme()
+}
+
+skinparam rectangle {
+    $blk_scheme()
+}
+
+skinparam stack {
+    $obj_scheme()
+    BackgroundColor none
+}
+
+skinparam storage {
+    $obj_scheme()
+}
+
+skinparam usecase {
+    $obj_scheme()
+    BackgroundColor none
+}
+
+skinparam object {
+    $blk_scheme()
 }
 
 skinparam note {
     BackgroundColor $ORANGE
     BorderColor $SNOW1
-    FontColor #$SNOW3
+    FontColor $SNOW3
 }
 
 skinparam class {
 	StereotypeFontColor $SNOW1
 }
+
+skinparam state {
+    $blk_scheme()
+}
+
