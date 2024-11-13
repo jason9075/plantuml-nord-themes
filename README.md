@@ -23,6 +23,6 @@ A2 -> A1: As am i, brother.\nThe tall skinny figure has thrown the oats at me.\n
 @enduml
 ```
 
-[Sequence](./imgs/sequence.png)
+![Sequence](./imgs/sequence.png)
 
 [Color Ref](https://www.nordtheme.com/)
