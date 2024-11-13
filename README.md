@@ -9,6 +9,8 @@
 
 ## Example
 
+### Sequence
+
 ```plantuml
 @startuml
 !theme nord-night from https://raw.githubusercontent.com/jason9075/plantuml-nord-themes/main/themes
