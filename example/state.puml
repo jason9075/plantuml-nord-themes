@@ -1,35 +1,3 @@
-# Plantuml Nord Themes
-
-## Usage
-
-```plantuml
-!theme nord-night from https://raw.githubusercontent.com/jason9075/plantuml-nord-themes/main/themes
-
-```
-
-## Example
-
-### Sequence
-
-```plantuml
-@startuml
-!theme nord-night from https://raw.githubusercontent.com/jason9075/plantuml-nord-themes/main/themes
-skinparam actorStyle awesome
-title Brother May I Have Some Oats
-actor Actor1 as A1
-actor Actor2 as A2 $RED
-A1 -> A2: Brother, may I have some oats?
-A2 -> A1: No.
-A1 -> A2: I am straving, brother.
-A2 -> A1: As am i, brother.\nThe tall skinny figure has thrown the oats at me.\n<color $RED>**ME! BROTHER**</color>.\nI believe they have taken a liking to me.
-@enduml
-```
-
-![Sequence](./imgs/sequence.png)
-
-### State
-
-```plantuml
 @startuml
 !theme nord-night from https://raw.githubusercontent.com/jason9075/plantuml-nord-themes/main/themes
 title State Machine Diagram
@@ -59,10 +27,3 @@ state RAG {
 RAG --> [*]
 Unspecified --> [*]
 @enduml
-```
-
-![State](./imgs/state.png)
-
-## Ref
-
-[Color Ref](https://www.nordtheme.com/)
