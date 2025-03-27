@@ -1,0 +1,34 @@
+@startuml
+!theme nord-night from https://raw.githubusercontent.com/jason9075/plantuml-nord-themes/main/themes
+
+interface Convertible {
+    + Execute()
+}
+
+class Catalog {
+    + summarizing()
+    + chunking()
+    + embedding()
+}
+
+class FilePDF {
+    - converting()
+    + Execute()
+}
+
+class FileDoc {
+    - converting()
+    + Execute()
+}
+
+class FileText {
+    + Execute()
+}
+
+Convertible <|.. Catalog
+
+Catalog <|-- FilePDF
+Catalog <|-- FileDoc
+Catalog <|-- FileText
+
+@enduml

@@ -4,7 +4,7 @@ title State Machine Diagram
 
 state NotStarted:
 state Waiting: jump to next state by type
-state Failed: if process file failed when\nworker just start
+state Failed: if process file failed when\nworker just started
 state Converting: convert pdf to markdown
 state Summarizing: 1.fetch file from minio\n2.use pipeline to gen summary
 state Unspecified: may come from any state if\nerror occurs
@@ -17,7 +17,7 @@ Waiting --> Summarizing : text,markdown
 Converting -r-> Summarizing : markdown
 Summarizing --> RAG
 state RAG {
-    state Chunking:1.fecth file from minio\n2.chunk text pipeline\n3.save and update file
+    state Chunking:1.fetch file from minio\n2.chunk text pipeline\n3.save and update file
     state Embedding:1.get chunk from db\n2.call embedding pipeline\n3.save embedding to milvus\n4.update files
     state Completed:log info
   [*] --> Chunking
